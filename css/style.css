@@ -1,0 +1,15 @@
+/*Arquivo que contem os estilos da pagina*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    border: 3px solid red;
+}
+
+
