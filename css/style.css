@@ -13,7 +13,6 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    /*border: 3px solid red;*/
     position: relative;
 }
 
@@ -24,33 +23,21 @@ body{
     width: 100%;
     height: 100px;
     padding: 35px 0 0 8%;
-    /*background-color: aqua;
-    border: 3px solid blue;*/
 }
-/*
-.header img{
-    margin: 0 auto;
-    border: 3px solid red;
-}*/
 
 .container_principal{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    /*justify-content: space-evenly;*/
     justify-content: center;
     gap: 5%;
-    /*border: 3px solid green;*/
 }
 
 /* ========== AREA DE TEXTO ========== */
 .container_principal .area_texto{
-    /*width: 800px;*/
     height: 700px;
-    /*width: 55%;*/
     width: clamp(550px, 55%, 950px);
-    border: 3px solid red;
     position: relative;
 }
 
@@ -60,7 +47,6 @@ body{
     font-size: 2rem;
     padding: 20px;
     resize: none;
-    /*border: none;*/
 }
 
 /* ========== BOTÕES ========== */
@@ -72,7 +58,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /*border: 3px solid #000;*/
 }
 .botoes button{
     width: 400px;
@@ -82,10 +67,8 @@ body{
     font-family: Helvetica, sans-serif;
     font-weight: 550;
     border-radius: 20px;
-    /*border: 2px solid gray;*/
     border: 2px solid #0f498f;
     box-shadow: 0px 0px 8px #000;
-    /*cursor: pointer;*/
 }
 
 .btn1{
@@ -94,7 +77,6 @@ body{
 }
 
 .botoes button:hover{
-    /*border: none;*/
     cursor: pointer;
 }
 
@@ -104,14 +86,10 @@ body{
 
 /* ========== RESULTADO ========== */
 .container_principal .resultado{
-    /*width: 400px;*/
     height: 700px;
-    /*width: 25%;*/
     width: clamp(250px, 25%, 350px);
     background-color: #f0f0f0;
     border-radius: 50px;
-    /*padding-top: 60px;*/
-    border: 3px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,8 +97,6 @@ body{
 .resultado_bg{
     width: 100%;
     height: 70%;
-    /*margin: 10px;*/
-    /*border: 3px solid blue;*/
 }
 
 .hide{
@@ -134,7 +110,6 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    /*border: 3px solid #000;*/
     border-top: 2px solid rgb(145, 144, 144);
     display: flex;
     align-items: center;
@@ -152,5 +127,4 @@ footer p a{
     color: #ffffff;
 }
 
-
-/* 133 linhas */
+/* 156 linhas */
