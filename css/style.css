@@ -44,6 +44,7 @@ body{
     /*border: 3px solid green;*/
 }
 
+/* ========== AREA DE TEXTO ========== */
 .container_principal .area_texto{
     /*width: 800px;*/
     height: 700px;
@@ -120,13 +121,29 @@ body{
     display: none;
 }
 
+/* ========== FOOTER ========== */
 .footer{
     width: 100%;
     height: 70px;
     position: absolute;
     bottom: 0;
     left: 0;
-    border: 3px solid #000;
+    /*border: 3px solid #000;*/
+    border-top: 2px solid rgb(145, 144, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f498f;
+}
+
+footer p{
+    font-size: 1.8rem;
+    color: #cfc0c0;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
