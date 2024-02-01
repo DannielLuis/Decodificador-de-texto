@@ -1,7 +1,10 @@
 //
 const campoTexto = document.querySelectorAll('[campoTexto]');
 const maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const textRegExp = new RegExp(/[0-9]/)
+//const textRegExp = new RegExp(/[0-9]/)
+const textRegExp = new RegExp(
+    /[(0-9)(À-ù)(À-ü)('"!@)]/
+);
 
 function textValidate(){
     let area = document.querySelector('.area_texto_input').value
