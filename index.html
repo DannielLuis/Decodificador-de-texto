@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
+    <body onload="textValidate()">
         <header class="header">
             <a href="/" class="logo">
                 <img src="http://localhost:3000/imgs/logo1.png" alt="">
@@ -17,7 +17,9 @@
         <!-- Container principal da pagina -->
         <main class="container_principal">
             <section class="area_texto">
-                <textarea campoTexto oninput="textValidate()" class="area_texto_input" rows="20" cols="50" placeholder="Digite seu texto..."></textarea>
+                <textarea campoTexto oninput="textValidate()" 
+                class="area_texto_input" rows="20" cols="50" 
+                placeholder="Digite seu texto...">daniel Luis é um dev front-end</textarea>
                 
                 <div class="botoes">
                     <button class="btn1">Criptografar</button>
