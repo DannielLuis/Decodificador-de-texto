@@ -47,6 +47,22 @@ body{
     font-size: 2rem;
     padding: 20px;
     resize: none;
+    /*border: none;*/
+}
+.area_texto_input:focus{
+    /*box-shadow: 0 0 0 0;
+    border: none;*/
+    outline: 0;
+}
+/*
+.area_texto .area_texto_input:active{
+    border: none;
+    border: 10px solid blue;
+}*/
+
+.text_invalid{
+    border: 2px solid red;
+    box-shadow: 0px 0px 6px #ff0000;
 }
 
 /* ========== BOTÕES ========== */
