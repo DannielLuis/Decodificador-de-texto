@@ -1,6 +1,7 @@
 //
 const objeto = document.querySelectorAll('[objeto]');
 const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
 const outputText = document.querySelector(".outputText");
 const maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 //const textRegExp = new RegExp(/[0-9]/)
@@ -80,6 +81,25 @@ function encriptar(string){
     return result
 }
 
+function descriptografar(string){
+    let validar = textValidate();
+    let result = ''
+
+    if(!validar){
+        alert("Não é possivel descriptografar, texto invalido!")
+        return false
+    }else if(validar){
+        result = string
+            .replaceAll("enter" , "e")
+            .replaceAll("imes" , "i")
+            .replaceAll("ai" , "a")
+            .replaceAll("ober" , "o")
+            .replaceAll("ufat" , "u")
+    }
+
+    return result;
+}
+
 function mostraTextoEncriptado(result){
     objeto[1].classList.add("hide")
     outputText.classList.remove("hide")
@@ -92,6 +112,19 @@ btn1.addEventListener("click", () => {
     let area = document.querySelector('.area_texto_input').value;
     //let area2 = document.querySelector('.area_texto_input').textContent;
     let result = encriptar(area);
+    //console.log(result);
+    if(result !== false){
+        //console.log("Texto encriptado.");
+        mostraTextoEncriptado(result)
+    }else if(result === false){
+        console.log("Texto invalido!!!")
+    }
+});
+
+btn2.addEventListener("click", () => {
+    //testes()
+    let area = document.querySelector('.area_texto_input').value;
+    let result = descriptografar(area)
     //console.log(result);
     if(result !== false){
         //console.log("Texto encriptado.");
