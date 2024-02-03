@@ -28,6 +28,11 @@ const textValidate = () => {
         }
         //console.log(area.charAt(i))
     }
+
+    if(area.length === 0){
+        console.log("Não tem nada para ser encriptado");
+        validar = false
+    }
     //console.log(area)
     return validar
 }
