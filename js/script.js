@@ -1,6 +1,7 @@
 //
-const campoTexto = document.querySelectorAll('[campoTexto]');
+const objeto = document.querySelectorAll('[objeto]');
 const btn1 = document.querySelector(".btn1");
+const outputText = document.querySelector(".outputText");
 const maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 //const textRegExp = new RegExp(/[0-9]/)
 const textRegExp = new RegExp(
@@ -14,16 +15,16 @@ const textValidate = () => {
     for(i=0; i < area.length; i++){
         if(maiuscula.indexOf(area.charAt(i)) != -1){
             console.log("Somente letras minusculas!");
-            campoTexto[0].classList.add("text_invalid");
+            objeto[0].classList.add("text_invalid");
             validar = false
             //return
         }else if(textRegExp.test(area)){
             console.log("Texto invalido, não é permitido numeros!");
-            campoTexto[0].classList.add("text_invalid");
+            objeto[0].classList.add("text_invalid");
             validar = false
         }else if(validar){
             //console.log(area)
-            campoTexto[0].classList.remove("text_invalid");
+            objeto[0].classList.remove("text_invalid");
         }
         //console.log(area.charAt(i))
     }
@@ -75,8 +76,14 @@ function encriptar(string){
 
 btn1.addEventListener("click", () => {
     let area = document.querySelector('.area_texto_input').value;
+    //let area2 = document.querySelector('.area_texto_input').textContent;
     let result = encriptar(area);
     console.log(result);
+    objeto[1].classList.add("hide")
+    outputText.classList.remove("hide")
+    outputText.textContent = result
+    //console.log(outputText.textContent)
+    //console.log(area2)
 });
 
 function testes(){
