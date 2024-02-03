@@ -39,6 +39,9 @@ body{
 /* ========== AREA DE TEXTO ========== */
 /*.container_principal */
 .area_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 700px;
     width: clamp(550px, 55%, 950px);
     position: relative;
@@ -69,15 +72,33 @@ body{
     box-shadow: 0px 0px 6px #ff0000;
 }
 
+.area_texto .alert{
+    display: flex;
+    align-items: center;
+    /*margin-top: 10px;*/
+    /*border: 3px solid blue;*/
+}
+.area_texto span{
+    font-size: 1.5rem;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+}
+
+
 /* ========== BOTÕES ========== */
 .botoes{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    /*border: 3px solid red;*/
 }
 .botoes button{
     width: 400px;
