@@ -40,6 +40,7 @@ function encriptar(string){
     //console.log(validar)
     if(!validar){
         alert("Não é possivel encriptar, texto invalido!")
+        return false
     }else if(validar){
         for(let i = 0; i < string.length; i++){
             //console.log(string.charAt(i))
@@ -74,16 +75,25 @@ function encriptar(string){
     return result
 }
 
-btn1.addEventListener("click", () => {
-    let area = document.querySelector('.area_texto_input').value;
-    //let area2 = document.querySelector('.area_texto_input').textContent;
-    let result = encriptar(area);
-    console.log(result);
+function mostraTextoEncriptado(result){
     objeto[1].classList.add("hide")
     outputText.classList.remove("hide")
     outputText.textContent = result
     //console.log(outputText.textContent)
     //console.log(area2)
+}
+
+btn1.addEventListener("click", () => {
+    let area = document.querySelector('.area_texto_input').value;
+    //let area2 = document.querySelector('.area_texto_input').textContent;
+    let result = encriptar(area);
+    //console.log(result);
+    if(result !== false){
+        //console.log("Texto encriptado.");
+        mostraTextoEncriptado(result)
+    }else if(result === false){
+        console.log("Texto invalido!!!")
+    }
 });
 
 function testes(){
