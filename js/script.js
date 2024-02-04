@@ -126,6 +126,7 @@ function descriptografar(string){
 
 function mostraTextoEncriptado(result){
     objeto[1].classList.add("hide")
+    objeto[2].classList.add("hide")
     outputText.classList.remove("hide")
     btn_copiar.classList.remove("hide")
     outputText.textContent = result
