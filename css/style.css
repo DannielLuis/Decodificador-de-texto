@@ -89,8 +89,9 @@ body{
 .botoes{
     width: 100%;
     gap: 20px;
-    border: 3px solid red;
+   /* border: 3px solid red;*/
 }
+
 
 .botoes button{
     width: 400px;
@@ -122,7 +123,7 @@ body{
     height: 700px;
     width: clamp(250px, 25%, 350px);
     background-color: #f5eded;
-    border-radius: 50px;
+    border-radius: 30px;
     position: relative;
     box-shadow: 0px 0px 8px var(--color-black);
 }
@@ -141,6 +142,24 @@ body{
 
 .hide{
     display: none;
+}
+
+.btn_copiar{
+    position: absolute;
+    bottom: 20px;
+    /*width: 400px;*/
+    width: 90%;
+    height: 60px;
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    font-family: Helvetica, sans-serif;
+    font-weight: 550;
+    border-radius: 20px;
+    border: 2px solid var(--color-blue);
+    box-shadow: 0px 0px 8px var(--color-black);
+}
+.btn_copiar:hover{
+    cursor: pointer;
 }
 
 /* ========== FOOTER ========== */

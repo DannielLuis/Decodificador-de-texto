@@ -2,12 +2,36 @@
 const objeto = document.querySelectorAll('[objeto]');
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector(".btn2");
+const btn_copiar = document.querySelector(".btn_copiar");
 const outputText = document.querySelector(".outputText");
 const maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 //const textRegExp = new RegExp(/[0-9]/)
 const textRegExp = new RegExp(
     /[(0-9)(À-ù)(À-ü)('"!@)]/
 );
+
+btn_copiar.onclick = copiar;
+
+function copiar(){
+    //alert("Textando btn copiar")
+    //console.log(outputText.textContent)
+    const valid = validateCopy()
+
+    if(valid){
+        alert("Não tem nada para ser copiado!")
+    }else if(!valid){
+        console.log("Texto copiado!")
+        navigator.clipboard.writeText(outputText.textContent)
+    }
+}
+
+function validateCopy(){
+    let valid = outputText.textContent === "" 
+    ? true 
+    : false
+
+    return valid
+}
 
 const textValidate = () => {
     let area = document.querySelector('.area_texto_input').value
@@ -103,6 +127,7 @@ function descriptografar(string){
 function mostraTextoEncriptado(result){
     objeto[1].classList.add("hide")
     outputText.classList.remove("hide")
+    btn_copiar.classList.remove("hide")
     outputText.textContent = result
     //console.log(outputText.textContent)
     //console.log(area2)
