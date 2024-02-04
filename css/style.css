@@ -32,8 +32,9 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100px;
-    padding: 35px 0 0 8%;
+    height: 10%;/*100px*/
+    padding: 2% 0 0 8%;
+    z-index: 1;
 }
 
 .container_principal{
@@ -46,7 +47,7 @@ body{
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
-    height: 700px;
+    height: 70%;/*700px*/
     width: clamp(550px, 55%, 950px);
     position: relative;
 }
@@ -120,8 +121,8 @@ body{
 
 /* ========== RESULTADO ========== */
 .resultado{
-    height: 700px;
-    width: clamp(250px, 25%, 350px);
+    height: 80%;/*700px*/
+    width: clamp(300px, 25%, 350px);/*(250px, 25%, 350px)*/
     background-color: #f5eded;
     border-radius: 30px;
     position: relative;
@@ -165,7 +166,7 @@ body{
 /* ========== FOOTER ========== */
 .footer{
     width: 100%;
-    height: 70px;
+    height: 8%;/*70px*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -183,4 +184,15 @@ footer p a{
     color: var(--color-white);
 }
 
-/* 185 linhas */
+
+
+/* ==================== ==================== */
+@media screen and (max-width: 1024px){
+    .area_texto_input{
+        font-size: 1.5rem;
+    }
+
+    .area_texto span{
+        font-size: 1.2rem;
+    }
+}
