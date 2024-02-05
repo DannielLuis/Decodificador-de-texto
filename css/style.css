@@ -244,3 +244,47 @@ footer p a{
         position: static;
     }
 }
+
+
+/* ==================== ==================== */
+@media screen and (max-width: 480px){
+    .container_principal{
+        padding: 80px 0;
+        gap: 30px;
+        /*border: 6px solid green;*/
+    }
+
+    .area_texto{
+        height: 450px;
+        /*border: 6px solid blue;*/
+    }
+
+    .area_texto_input{
+        height: 75%;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    .area_texto span{ font-size: 1rem; }
+
+    .botoes button{
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .resultado{
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+        /*border: 3px solid red;*/
+    }
+
+    .footer{
+        height: 60px;
+    }
+
+    footer p{
+        font-size: 1.2rem;
+    }
+}
+
+
