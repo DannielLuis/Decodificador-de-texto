@@ -1,4 +1,5 @@
 //
+const body = document.querySelector("body")
 const objeto = document.querySelectorAll('[objeto]');
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector(".btn2");
@@ -9,6 +10,8 @@ const maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const textRegExp = new RegExp(
     /[(0-9)(À-ù)(À-ü)('"!@)]/
 );
+
+//console.log(body)
 
 btn_copiar.onclick = copiar;
 
@@ -125,6 +128,7 @@ function descriptografar(string){
 }
 
 function mostraTextoEncriptado(result){
+    body.classList.add("height_auto")
     objeto[1].classList.add("hide")
     objeto[2].classList.add("hide")
     outputText.classList.remove("hide")
