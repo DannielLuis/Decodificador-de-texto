@@ -32,7 +32,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;/*100px*/
+    height: 10%;
     padding: 2% 0 0 8%;
     z-index: 1;
 }
@@ -47,8 +47,8 @@ body{
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;/*700px*/
-    width: clamp(450px, 55%, 950px);/*(550px, 55%, 950px)*/
+    height: 70%;
+    width: clamp(450px, 55%, 950px);
     position: relative;
 }
 
@@ -60,8 +60,6 @@ body{
     resize: none;
 }
 .area_texto_input:focus{
-    /*box-shadow: 0 0 0 0;
-    border: none;*/
     outline: 0;
 }
 
@@ -90,7 +88,6 @@ body{
 .botoes{
     width: 100%;
     gap: 20px;
-   /* border: 3px solid red;*/
 }
 
 
@@ -121,8 +118,8 @@ body{
 
 /* ========== RESULTADO ========== */
 .resultado{
-    height: 80%;/*700px*/
-    width: clamp(300px, 25%, 350px);/*(250px, 25%, 350px)*/
+    height: 80%;
+    width: clamp(300px, 25%, 350px);
     background-color: #f5eded;
     border-radius: 30px;
     position: relative;
@@ -155,7 +152,6 @@ body{
 .btn_copiar{
     position: absolute;
     bottom: 20px;
-    /*width: 400px;*/
     width: 90%;
     height: 60px;
     font-size: 1.5rem;
@@ -173,7 +169,7 @@ body{
 /* ========== FOOTER ========== */
 .footer{
     width: 100%;
-    height: 8%;/*70px*/
+    height: 8%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -251,12 +247,10 @@ footer p a{
     .container_principal{
         padding: 80px 0;
         gap: 30px;
-        /*border: 6px solid green;*/
     }
 
     .area_texto{
         height: 450px;
-        /*border: 6px solid blue;*/
     }
 
     .area_texto_input{
@@ -275,7 +269,6 @@ footer p a{
         width: 90%;
         height: auto;
         padding: 20px 10px;
-        /*border: 3px solid red;*/
     }
 
     .footer{
